@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Techstitution 4</title>
+  <!--  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  -->
+  </head>
+  <body>
+    <div class="container content">
+      <h1>Specific Audit</h1>
+      <div class="col-md-offset-4 col-md-2">
+        <div class="well">
+          <h1>Accident: <b>{{ audit.accident }}</b></h1>
+          <h1>Airprox: <b>{{ audit.airprox }}</b></h1>
+          <h1>Incident: <b>{{ audit.incident }}</b></h1>
+          <h1>Infringement: <b>{{ audit.infringement }}</b></h1>
+          <h1>Occurrence position: <b>{{ audit.infringement }}</b></h1>
+          <h1>FL ALT:: <b>{{ audit.optionFLALT }}</b></h1>
+          <a href="/edit/audit/{{audit._id}}">Edit</a>
+
+        </div>
+      </div>
+    </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+

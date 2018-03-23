@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>CAA - Civil Aviation Authority in Kosovo</title>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/materialize.css')}}">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="light-blue lighten-1" role="navigation"> </nav>
+  </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header center orange-text">CAA - Civil Aviation Authority in Kosovo</h2>
+      <div class="row center">
+        <h5 class="header col s12 light">Please complete this form online or print, fill in and send it to the address below.
+        </h5>
+      </div>
+
+      <div class="row center">
+        <p>Second official institutional partnership for #Techstitution with the “CAA - Civil Aviation Authority in Kosovo". We have officially signed our agreement on 29 June 2017 between CAA and Open Data Kosovo. The main idea behind this digital solution
+          will be to build a system of management data for the Audit Inspection Database and digitize their occurrence reports via their official website. </p>
+      </div>
+      <br><br>
+      <br></br>
+      <div class=".center-align">
+        <div class="card-panel hoverable">
+          <p class="center-align">
+            <p class="light-blue-text">1</p>Categories of occurrence</p>
+
+          <form class="col s12 l3" method="POST">
+
+            <div class="row">
+
+              <div class="input-field col s3">
+
+                <input id="ACCIDENT" type="checkbox" class="validate" name="accident">
+                <label for="ACCIDENT">ACCIDENT</label>
+              </div>
+
+              <div class="input-field col s3">
+                <input id="AIRPROX" type="checkbox" class="validate" name="airprox">
+                <label for="AIRPROX">AIRPROX</label>
+              </div>
+
+              <div class="input-field col s3">
+                <input id="INFRINGEMENT" type="checkbox" class="validate" name="incident">
+                <label for="INFRINGEMENT">INCIDENT</label>
+              </div>
+
+
+              <div class="input-field col s3">
+                <input id="INFRINGEMENT" type="checkbox" class="validate" name="infringement">
+                <label for="INFRINGEMENT">INFRINGEMENT</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">2 </p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">3 </p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">4 </p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">5 </p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="OCCURRENCE POSITION" type="text" class="validate" name="occurrenceposition">
+                <label for="OCCURRENCE POSITION">OCCURRENCE POSITION</label>
+              </div>
+              <div class="input-field col s3">
+
+                <select name="optionFLALT">
+     		 <option value="">Choose your option</option>
+     		 <option value="1">FL</option>
+     		 <option value="2">ALT/HT</option>
+      
+   			</select>
+
+                <label>FL ALT/HT</label>
+
+                </select>
+              </div>
+
+              <div class="input-field col s3">
+                <input id="DATE" type="DATE" class="validate" name="inputdate">
+                <label for="DATE"></label>
+              </div>
+
+
+              <div class="input-field col s3">
+                <input id="TIME" type="TIME" class="validate" name="time">
+                <label for="TIME"></label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <p>OPERATOR</p>
+              </div>
+
+              <div class="input-field col s3">
+                <input id="operator1" type="text" class="validate" name="operator1">
+                <label for="operator1"><p class="light-blue-text">6 </p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="operator2" type="text" class="validate" name="operator2">
+                <label for="operator2"><p class="light-blue-text">7</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="operator3" type="text" class="validate" name="operator3">
+                <label for="operator3"><p class="light-blue-text">8</p></label>
+              </div>
+
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>CALLSIGN/REGN</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="callsign1" type="text" class="validate" name="callsign1">
+                <label for="callsign1"><p class="light-blue-text">9</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="callsign2" type="text" class="validate" name="callsign2">
+                <label for="callsign2"><p class="light-blue-text">10</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="callsign3" type="text" class="validate" name="callsign3">
+                <label for="callsign3"><p class="light-blue-text">11</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>TYPE</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="type1" type="text" class="validate" name="type1">
+                <label for="type1"><p class="light-blue-text">12</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="type2" type="text" class="validate" name="type2">
+                <label for="type2"><p class="light-blue-text">13</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="type3" type="text" class="validate" name="type3">
+                <label for="type3"><p class="light-blue-text">14</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>FROM</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="from1" type="text" class="validate" name="from1">
+                <label for="from1"><p class="light-blue-text">15</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="from2" type="text" class="validate" name="from2">
+                <label for="from2"><p class="light-blue-text">16</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="from3" type="text" class="validate" name="from3">
+                <label for="from3"><p class="light-blue-text">17</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>TO</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="to1" type="text" class="validate" name="to1">
+                <label for="to1"><p class="light-blue-text">18</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="to2" type="text" class="validate" name="to2">
+                <label for="to2"><p class="light-blue-text">19</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="to3" type="text" class="validate" name="to3">
+                <label for="to3"><p class="light-blue-text">20</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>SSR CODE</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="ssr1" type="text" class="validate" name="ssr1">
+                <label for="ssr1"><p class="light-blue-text">21</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="ssr2" type="text" class="validate" name="ssr2">
+                <label for="ssr2"><p class="light-blue-text">22</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="ssr3" type="text" class="validate" name="ssr3">
+                <label for="ssr3"><p class="light-blue-text">23</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>MODE C DISPLAYED</p>
+              </div>
+              <div class="input-field col s3">
+                <input id="modec1" type="text" class="validate" name="modec1">
+                <label for="modec1"><p class="light-blue-text">24</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="modec2" type="text" class="validate" name="modec2">
+                <label for="modec2"><p class="light-blue-text">25</p></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="modec3" type="text" class="validate" name="modec3">
+                <label for="modec3"><p class="light-blue-text">26</p></label>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text"></p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">27 </p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">28</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">29 </p>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="input-field col s3">
+                <p>IFR/VFR/SVFR</p>
+              </div>
+              <div class="input-field col s3">
+                <select name="ifr1">
+     		 <option value=""><label for="ifr1">Choose your option</label></option>
+     		 <option value="1">IFR</option>
+     		 <option value="2">VFR</option>
+             <option value="2">SVFR</option>
+
+   			</select>
+
+              </div>
+              <div class="input-field col s3">
+                <select name="ifr2">
+     		     <option value=""><label for="ifr1">Choose your option</label></option>
+     		     <option value="1">IFR</option>
+     		     <option value="2">VFR</option>
+                 <option value="2">SVFR</option>
+
+   			    </select>
+              </div>
+              <div class="input-field col s3">
+                <select name="ifr3">
+     		     <option value=""><label for="ifr1">Choose your option</label></option>
+     		     <option value="1">IFR</option>
+     		     <option value="2">VFR</option>
+                 <option value="2">SVFR</option>
+
+   			    </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">30</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">31</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">32</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">33</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="rtf1" type="text" class="validate" name="rtf1">
+                <label for="rtf1">RTF Frequencies</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="radar" type="text" class="validate" name="radar">
+                <label for="radar">Radar Equipment</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="equipment" type="text" class="validate" name="equipment">
+                <label for="equipment">Equipment Unserviceabilities</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="qnh" type="text" class="validate" name="qnh">
+                <label for="qnh">QNH</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">34</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">35 </p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">36</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">37 </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="Runwayinuse" type="text" class="validate" name="Runwayinuse">
+                <label for="Runwayinuse">Runway in use</label>
+              </div>
+              <div class="input-field col s3">
+
+                <select name="airspace">
+     	        	 <option value="">Choose your option</option>
+     		           <option value="A">A</option>
+                       <option value="B">B</option>
+                       <option value="C">C</option>
+                       <option value="D">D</option>
+                       <option value="E">E</option>
+                       <option value="F">F</option>
+                       <option value="G">G</option>
+   			    </select>
+                <label for="airspace">CLASS OF AIRSPACE</label>
+              </div>
+              <div class="input-field col s3">
+                <select name="typeairspace">
+     	        	 <option value="">Choose your option</option>
+     		           <option value="ATZ">ATZ</option>
+                       <option value="CTA">CTA</option>
+                       <option value="CBA">CBA</option>
+                       <option value="CTR">CTR</option>
+                       <option value="CVSM">CVSM</option>
+                       <option value="Danger area">Danger area</option>
+                       <option value="Prohibited area">Prohibited area</option>
+                      <option value="TMA">TMA</option>
+                      <option value="RVSM">RVSM</option>
+                      <option value="Restricted area">Restricted area</option>
+                      <option value="Transitional area">Transitional area</option>
+                      <option value="TSA">TSA</option>
+                      <option value="Other">Other</option>
+                      <option value="Unknown">Unknown</option>
+   			    </select>
+                <label for="airspace">CLASS OF AIRSPACE</label>
+              </div>
+              <div class="input-field col s3">
+                <select name="typeofats">
+     	        	 <option value="">Choose your option</option>
+     		           <option value="Radar">Radar</option>
+                       <option value="Approach">Approach</option>
+                       <option value="Aerodrome">Aerodrome</option>
+                       <option value="Area">Area</option>
+                       <option value="Procedural Control">Procedural Control</option>
+                       <option value="Radar Control">Radar Control</option>
+                       <option value="Radar Service">Radar Service</option>
+                      <option value="Traffic Service">Traffic Service</option>
+                      <option value="Basic Service">Basic Service</option>
+                      <option value="ADC">ADC</option>
+                      <option value="GMC">GMC</option>
+                      <option value="ALR">ALR</option>
+                      <option value="Other">Other</option>
+   			    </select>
+                <label for="airspace">TYPE OF ATS SERVICE</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">38</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">39</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">40</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">41</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <select name="typeofats">
+     	        	 <option value="">Choose your option</option>
+     		           <option value="SID">SID</option>
+                       <option value="STAR">STAR</option>
+                       <option value="ROUTE">ROUTE</option>
+
+   			    </select>
+                <label for="airspace">SID/STAR/ROUTE</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="prescribed" type="text" class="validate" name="prescribed">
+                <label for="prescribed">Was prescribed separation lost?</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="minseparation" type="text" class="validate" name="minseparation">
+                <label for="minseparation">Min Separation</label>
+              </div>
+
+              <div class="input-field col s3">
+                <select name="alertactivation">
+                    <option value="">Choose your option</option>
+                    <option value="Collision">Collision</option>
+                    <option value="Conflict Alert">Conflict Alert</option>
+                    <option value="TCAS">TCAS</option>
+                    <option value="STCA">STCA</option>
+                    <option value="SMF">SMF</option>
+                </select>
+                <label for="alertactivation">Alert Activation</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <p class="light-blue-text">42</p>
+              </div>
+              <div class="input-field col s4">
+                <p class="light-blue-text">43</p>
+              </div>
+              <div class="input-field col s4">
+                <p class="light-blue-text">44</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="trafficinfo" type="text" class="validate" name="trafficinfo">
+                <label for="trafficinfo">Traffic info given by ATC? Y/N</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="trafficinfo" type="text" class="validate" name="trafficinfo">
+                <label for="trafficinfo">Avoiding action given by ATC? Y/N</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="titlesummary" type="text" class="validate" name="titlesummary">
+                <label for="titlesummary">BRIEF TITLE Summary</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <p class="light-blue-text">45</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="trafficinfo" type="text" class="validate" name="trafficinfo">
+                <label for="trafficinfo">NARRATIVE - use a diagram if necessary (Aerodromes submit weather report
+                    including local and regional QNH).</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">46</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">47</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">48</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">49 Last Break UTS</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="name" type="text" class="validate" name="name">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="ondutyas" type="text" class="validate" name="ondutyas">
+                <label for="ondutyas">On duty as</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="atsunit" type="text" class="validate" name="atsunit">
+                <label for="atsunit">ATS Unit</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="TIME" type="TIME" class="validate" name="time">
+                <label for="time"></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">50 Shift UTS</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">51</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">52</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">53</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="TIME" type="TIME" class="validate" name="time">
+                <label for="time"></label>
+              </div>
+              <div class="input-field col s3">
+                <select name="held">
+                    <option value=""></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="held">Held</label>
+              </div>
+              <div class="input-field col s3">
+                <select name="rtfrecordings">
+                    <option value=""></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="held">RTF recordings Held</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="listagencies" type="text" class="validate" name="listagencies">
+                <label for="listagencies">List other agencies advised</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <p class="light-blue-text">54 Date/Sign</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">55</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">56</p>
+              </div>
+              <div class="input-field col s3">
+                <p class="light-blue-text">57</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <input id="datesign" type="date" class="validate" name="datesign">
+                <label for="datesign"></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="address" type="text" class="validate" name="address">
+                <label for="address">Address</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="emailaddress" type="email" class="validate" name="emailaddress">
+                <label for="emailaddress">E-mail Address</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="telephonenr" type="text" class="validate" name="telephonenr">
+                <label for="telephonenr">Telephone nr</label>
+              </div>
+            </div>
+
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="text.html" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="row center">
+          <!-- <input type="submit" id="download-button" class="btn-large waves-effect waves-light light-blue" /> -->
+          <input type="submit" value="submit" />
+        </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-12">
+        <table class="table">
+
+          <thead>
+            <th>Accident</th>
+            <th>Airprox</th>
+            <th>Incident</th>
+            <th>Infringement</th>
+            <th>Occurrence Position</th>
+            <th>Option FL ALT</th>
+          </thead>
+          <tbody>
+
+            {% for audit in audits %}
+            <tr>
+              <a href="/audit/{{audit.id}}">
+                <td>{{ audit.accident }}</td>
+              </a>
+              <td>{{ audit.airprox }}</td>
+              <td>{{ audit.incident}}</td>
+              <td>{{ audit.infringement}}</td>
+              <td>{{ audit.occurrenceposition}}</td>
+              <td>{{ audit.optionFLALT}}</td>
+
+              <td><a class="btn btn-success" href="/audit/{{audit._id}}">View</a>
+                <a class="btn btn-success" href="/audit/delete/{{audit._id}}">Delete</a>
+              </td>
+            </tr>
+
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <br><br>
+    </div>
+    <footer class="page-footer orange">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About</h5>
+            <p class="grey-text text-lighten-4">CAA - Civil Aviation Authority in Kosovo</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Albiona Hoti</a>
+          <p>Second official institutional partnership for #Techstitution with the “CAA - Civil Aviation Authority in Kosovo". We have officially signed our agreement on 29 June 2017 between CAA and Open Data Kosovo. The main idea behind this digital solution
+            will be to build a system of management data for the Audit Inspection Database and digitize their occurrence reports via their official website. </p>
+        </div>
+      </div>
+      <!--    (i) See Instructions and Explanatory Notes.
+(ii) When completed, please send to:	
+Civil Aviation Authority of Kosovo (CAAK)
+Ahmet Krasniqi Street n.n. (Arbëria) | 10000, Prishtina | Kosovo
+
+E-mail: mor@caa-ks.org
+Fax: +381 (0)38 211 009, Mob: +377 (0)44 613 567
+(iii) Fill in boxes 1-57 as required.-->
+
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="static/js/materialize.js"></script>
+    <script src="static/js/init.js"></script>
+
+    <script src="{{ url_for('static', filename='js/materialize.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/init.js')}}"></script>
+  </div>
+</body>
+
+</html>
